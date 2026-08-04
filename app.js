@@ -226,7 +226,7 @@ function configurarAvatar(){
 
         localStorage.removeItem("userAvatar");
 
-        atualizarAvatar("assets/avatars/default.png");
+        atualizarAvatar("assets/avatars/default.svg");
 
         mostrarToast("Avatar restaurado ao padrão.");
 
@@ -248,7 +248,7 @@ function atualizarAvatar(src){
 
 function carregarAvatar(){
 
-    const avatarSalvo=localStorage.getItem("userAvatar")||"assets/avatars/default.png";
+    const avatarSalvo=localStorage.getItem("userAvatar")||"assets/avatars/default.svg";
 
     atualizarAvatar(avatarSalvo);
 

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mais Foco XP</title>
+
+    <!-- Fonte -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ====================================== -->
+    <!-- SIDEBAR -->
+    <!-- ====================================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+
+                <i class="bi bi-controller"></i>
+
+            </div>
+
+            <div class="logo-text">
+
+                <h2>Mais Foco</h2>
+
+                <span>XP</span>
+
+            </div>
+
+        </div>
+
+        <nav class="menu">
+
+            <h4>MENU</h4>
+
+            <ul>
+
+                <li class="active">
+
+                    <a href="#dashboard">
+
+                        <i class="bi bi-grid-fill"></i>
+
+                        <span>Dashboard</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#missions">
+
+                        <i class="bi bi-bullseye"></i>
+
+                        <span>Missões</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#ranking">
+
+                        <i class="bi bi-trophy-fill"></i>
+
+                        <span>Ranking</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#achievements">
+
+                        <i class="bi bi-award-fill"></i>
+
+                        <span>Conquistas</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#store">
+
+                        <i class="bi bi-bag-fill"></i>
+
+                        <span>Loja</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#calendar">
+
+                        <i class="bi bi-calendar-event-fill"></i>
+
+                        <span>Calendário</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#profile">
+
+                        <i class="bi bi-person-circle"></i>
+
+                        <span>Perfil</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#manager">
+
+                        <i class="bi bi-bar-chart-fill"></i>
+
+                        <span>Gestão</span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <button class="logout">
+
+                <i class="bi bi-box-arrow-right"></i>
+
+                Sair
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- ====================================== -->
+    <!-- MAIN -->
+    <!-- ====================================== -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Olá, Albert 👋</h1>
+
+                <p>Continue evoluindo sua jornada!</p>
+
+            </div>
+
+            <div class="top-actions">
+
+                <button class="notification">
+
+                    <i class="bi bi-bell-fill"></i>
+
+                    <span class="badge">3</span>
+
+                </button>
+
+                <div class="user">
+
+                    <img src="assets/avatars/default.svg" alt="Avatar">
+
+                    <div>
+
+                        <strong>Albert Santos</strong>
+
+                        <span>Colaborador • Nível 12</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard">
+
+            <div class="cards">
+
+                <div class="card xp">
+
+                    <div class="card-icon">
+
+                        ⭐
+
+                    </div>
+
+                    <div>
+
+                        <h3>XP TOTAL</h3>
+
+                        <h2 id="xpValue">2450</h2>
+
+                        <small>+250 hoje</small>
+
+                    </div>
+
+                </div>
+
+                <div class="card level">
+
+                    <div class="card-icon">
+
+                        👑
+
+                    </div>
+
+                    <div>
+
+                        <h3>NÍVEL</h3>
+
+                        <h2>12</h2>
+
+                        <small>Especialista</small>
+
+                    </div>
+
+                </div>
+
+                <div class="card mission">
+
+                    <div class="card-icon">
+
+                        🎯
+
+                    </div>
+
+                    <div>
+
+                        <h3>MISSÕES</h3>
+
+                        <h2>31</h2>
+
+                        <small>3 pendentes</small>
+
+                    </div>
+
+                </div>
+
+                <div class="card streak">
+
+                    <div class="card-icon">
+
+                        🔥
+
+                    </div>
+
+                    <div>
+
+                        <h3>STREAK</h3>
+
+                        <h2>8 dias</h2>
+
+                        <small>Continue assim!</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Barra de XP -->
+
+            <div class="progress-card">
+
+                <div class="progress-header">
+
+                    <h2>Progresso do Nível</h2>
+
+                    <span>2450 / 3000 XP</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill" style="width:82%"></div>
+
+                </div>
+
+            </div>
+
+            <!-- ====================================== -->
+            <!-- CONTEÚDO PRINCIPAL -->
+            <!-- ====================================== -->
+
+            <div class="dashboard-grid">
+
+                <!-- Missões -->
+
+                <section id="missions" class="panel">
+
+                    <div class="kanban">
+
+                        <div class="kanban-column">
+
+                            <h3>📋 A Fazer</h3>
+
+                            <div id="todo" class="dropzone"></div>
+
+                        </div>
+
+                        <div class="kanban-column">
+
+                            <h3>🚀 Em andamento</h3>
+
+                            <div id="doing" class="dropzone"></div>
+
+                        </div>
+
+                        <div class="kanban-column">
+
+                            <h3>✅ Concluído</h3>
+
+                            <div id="done" class="dropzone"></div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Ranking -->
+
+                <section id="ranking" class="panel">
+
+                    <div class="panel-header">
+
+                        <h2>🏆 Ranking</h2>
+
+                    </div>
+
+                    <div class="ranking">
+
+                        <div class="ranking-item">
+
+                            <span>🥇 Albert</span>
+
+                            <strong>2450 XP</strong>
+
+                        </div>
+
+                        <div class="ranking-item">
+
+                            <span>🥈 Maria</span>
+
+                            <strong>2280 XP</strong>
+
+                        </div>
+
+                        <div class="ranking-item">
+
+                            <span>🥉 João</span>
+
+                            <strong>2100 XP</strong>
+
+                        </div>
+
+                        <div class="ranking-item">
+
+                            <span>4º Pedro</span>
+
+                            <strong>1800 XP</strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <!-- ====================================== -->
+            <!-- CONQUISTAS -->
+            <!-- ====================================== -->
+
+            <section id="achievements" class="panel">
+
+                <div class="panel-header">
+
+                    <h2>🏅 Conquistas</h2>
+
+                </div>
+
+                <div class="achievement-grid">
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            ⭐
+                        </div>
+
+                        <h3>Primeiro Passo</h3>
+
+                        <p>Complete sua primeira missão.</p>
+
+                    </div>
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            🔥
+                        </div>
+
+                        <h3>7 Dias</h3>
+
+                        <p>Mantenha uma sequência de sete dias.</p>
+
+                    </div>
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            👑
+                        </div>
+
+                        <h3>Nível 10</h3>
+
+                        <p>Alcance o nível dez.</p>
+
+                    </div>
+
+                    <div class="achievement-card locked">
+
+                        <div class="achievement-icon">
+                            🔒
+                        </div>
+
+                        <h3>Lenda</h3>
+
+                        <p>Alcance o nível cinquenta.</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ====================================== -->
+            <!-- LOJA -->
+            <!-- ====================================== -->
+
+            <section id="store" class="panel">
+
+                <div class="panel-header">
+
+                    <h2>🎁 Loja de Recompensas</h2>
+
+                </div>
+
+                <div class="store-grid">
+
+                    <div class="reward-card">
+
+                        <h3>☕ Café Premium</h3>
+
+                        <p>500 XP</p>
+
+                        <button>Trocar</button>
+
+                    </div>
+
+                    <div class="reward-card">
+
+                        <h3>🍕 Vale Pizza</h3>
+
+                        <p>1500 XP</p>
+
+                        <button>Trocar</button>
+
+                    </div>
+
+                    <div class="reward-card">
+
+                        <h3>🎧 Headset Gamer</h3>
+
+                        <p>5000 XP</p>
+
+                        <button>Trocar</button>
+
+                    </div>
+
+                    <div class="reward-card">
+
+                        <h3>🏖 Meio Período de Folga</h3>
+
+                        <p>3000 XP</p>
+
+                        <button>Trocar</button>
+
+                    </div>
+
+                </div>
+
+            </section>            <!-- ====================================== -->
+            <!-- PERFIL -->
+            <!-- ====================================== -->
+
+            <section id="profile" class="panel">
+
+                <div class="panel-header">
+
+                    <h2>👤 Meu Perfil</h2>
+
+                </div>
+
+                <div class="profile-container">
+
+                    <div class="profile-card">
+
+                        <img src="assets/avatars/default.png" alt="Avatar" class="profile-avatar">
+
+                        <div class="avatar-actions">
+
+                            <button type="button" class="avatar-change-btn">Alterar avatar</button>
+
+                            <button type="button" class="avatar-reset-btn">Restaurar padrão</button>
+
+                            <input type="file" id="avatarInput" accept="image/*" hidden>
+
+                        </div>
+
+                        <h2>Albert Santos</h2>
+
+                        <p>Consultor de Marketing</p>
+
+                        <span class="profile-level">
+                            ⭐ Nível 12
+                        </span>
+
+                    </div>
+
+                    <div class="profile-stats">
+
+                        <div class="stat-box">
+
+                            <h3>XP Total</h3>
+
+                            <span>2450</span>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h3>Missões</h3>
+
+                            <span>31</span>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h3>Conquistas</h3>
+
+                            <span>8</span>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h3>Streak</h3>
+
+                            <span>8 Dias</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ====================================== -->
+            <!-- CALENDÁRIO -->
+            <!-- ====================================== -->
+
+            <section id="calendar" class="panel">
+
+                <div class="panel-header">
+
+                    <h2>📅 Próximas Atividades</h2>
+
+                </div>
+
+                <div class="calendar-list">
+
+                    <div class="calendar-item">
+
+                        <span class="date">12 AGO</span>
+
+                        <div>
+
+                            <strong>Reunião Comercial</strong>
+
+                            <p>09:00</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="calendar-item">
+
+                        <span class="date">15 AGO</span>
+
+                        <div>
+
+                            <strong>Entrega da Campanha</strong>
+
+                            <p>17:00</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="calendar-item">
+
+                        <span class="date">20 AGO</span>
+
+                        <div>
+
+                            <strong>Workshop Interno</strong>
+
+                            <p>14:00</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ====================================== -->
+            <!-- ÁREA DO GESTOR -->
+            <!-- ====================================== -->
+
+            <section id="manager" class="panel">
+
+                <div class="panel-header">
+
+                    <h2>⚙ Painel do Gestor</h2>
+
+                </div>
+
+                <div class="manager-cards">
+
+                    <div class="manager-card">
+
+                        <i class="bi bi-people-fill"></i>
+
+                        <h3>Equipe</h3>
+
+                        <h2>18</h2>
+
+                    </div>
+
+                    <div class="manager-card">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <h3>Missões Concluídas</h3>
+
+                        <h2>142</h2>
+
+                    </div>
+
+                    <div class="manager-card">
+
+                        <i class="bi bi-bar-chart-fill"></i>
+
+                        <h3>Engajamento</h3>
+
+                        <h2>92%</h2>
+
+                    </div>
+
+                    <div class="manager-card">
+
+                        <i class="bi bi-graph-up-arrow"></i>
+
+                        <h3>Produtividade</h3>
+
+                        <h2>87%</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="panel chart-panel">
+
+                    <div class="panel-header">
+
+                        <h2>📈 Evolução da Equipe</h2>
+
+                    </div>
+
+                    <div class="charts-grid">
+
+                        <div class="chart-card">
+
+                            <h3>Evolução de XP</h3>
+
+                            <canvas id="xpChart"></canvas>
+
+                        </div>
+
+                        <div class="chart-card">
+
+                            <h3>Missões Concluídas</h3>
+
+                            <canvas id="missionChart"></canvas>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- ====================================== -->
+    <!-- MODAL DE NOTIFICAÇÕES -->
+    <!-- ====================================== -->
+
+    <div id="notificationModal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>🔔 Notificações</h2>
+
+                <button class="close-modal">
+
+                    <i class="bi bi-x-lg"></i>
+
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="notification-item">
+
+                    ⭐ Você ganhou 250 XP.
+
+                </div>
+
+                <div class="notification-item">
+
+                    🎯 Nova missão disponível.
+
+                </div>
+
+                <div class="notification-item">
+
+                    🏆 Você subiu para o Nível 12.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Chart.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Supabase -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Scripts -->
+
+    <script src="app.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="missions.js"></script>
+
+</body>
+
+</html>
