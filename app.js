@@ -14,6 +14,8 @@ function iniciarSistema(){
 
     configurarSidebar();
 
+    configurarHamburger();
+
     configurarNotificacoes();
 
     configurarAnimacoes();
@@ -47,7 +49,33 @@ function configurarSidebar(){
     });
 
 }
+function configurarHamburger(){
 
+    const hamburger = document.querySelector(".hamburger-menu");
+
+    const sidebar = document.querySelector(".sidebar");
+
+    if(!hamburger || !sidebar) return;
+
+    hamburger.addEventListener("click",(event)=>{
+
+        event.stopPropagation();
+
+        sidebar.classList.toggle("open");
+
+    });
+
+    document.addEventListener("click",(event)=>{
+
+        if(!sidebar.contains(event.target) && !hamburger.contains(event.target)){
+
+            sidebar.classList.remove("open");
+
+        }
+
+    });
+
+}
 /* ======================================================
    SCROLL SUAVE
 ====================================================== */
